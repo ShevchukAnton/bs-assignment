@@ -1,0 +1,33 @@
+{
+  "name": "backslash-ui-tests",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "Anton Shevchuk",
+  "license": "ISC",
+  "scripts": {
+    "all-tests": "npx playwright test --headed",
+    "all-tests-ui": "npx playwright test --ui",
+    "all-tests-headless": "npx playwright test",
+    "test:local": "cross-env NODE_ENV=local npm run all-tests"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.45.2",
+    "dotenv": "16.4.5",
+    "playwright": "1.45.2",
+    "playwright-core": "^1.42.1",
+    "typescript": "^5.5.3"
+  },
+  "description": "",
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "cross-env": "^7.0.3"
+  }
+}
